@@ -1,9 +1,8 @@
 <?php
-    while ($fetch = mysql_fetch_assoc($result)){
-    }
-    else {
-     echo 'User not found.';
-    }
+$scondb = new mysql('db403=mysql','root','p@sswOrd','northwind');
+if($conn->connect_errno){
+  die($conn->connect_errno);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
